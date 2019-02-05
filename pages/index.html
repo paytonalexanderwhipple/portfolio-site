@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./reset.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav>
+      <button id="primaryLinkCircle" data-toggled="">Menu</button>
+      <button class="linkCircle" id="link1" data-y-cord="0">Landing</button>
+      <button class="linkCircle" id="link2" data-y-cord="500">About</button>
+      <button class="linkCircle" id="link3" data-y-cord="1000">Skills</button>
+      <button class="linkCircle" id="link4" data-y-cord="1400">Projects</button>
+      <button class="linkCircle" id="link5" data-y-cord="5400">Contact</button>
+    </nav>
+    <div class="Landing">
+      <div class="shadow">
+        <h1 class="landingHeader">Payton Whipple</h1>
+        <div class="hr landingHr"></div>
+        <p class="landingText">Fullstack Web Developer</p>
+      </div>
+    </div>
+    <div class="triangleTop aboutBefore"></div>
+    <div class="About">
+      <div class="aboutContainer">
+        <h1 class="aboutHeader">About Me</h1>
+        <div class="hr aboutHr"></div>
+        <p class="aboutText">
+          Integer tincidunt pharetra diam, congue placerat ex euismod eget.
+          Integer ornare, purus non bibendum eleifend, diam sapien elementum
+          felis, quis tempus est nulla sit amet dui. Duis at egestas turpis.
+          Curabitur lacinia libero pulvinar congue bibendum. Praesent ornare
+          accumsan malesuada. Praesent tristique leo lobortis maximus dignissim.
+          Nunc sodales convallis tortor ut porta. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos.
+        </p>
+      </div>
+      <img class="faceShot" src="./assets/head-shot.JPG" alt="My face" />
+    </div>
+    <div class="triangleBottom aboutAfter"></div>
+    <div class="Skills">
+      <div class="outerSkillsContainer">
+        <h1>Skills</h1>
+        <div class="hr skillHr"></div>
+
+        <div class="skillsContainer">
+          <div id="jsSkill">
+            <img class="skillImage" src="./assets/Javascript.png" alt="" />
+            <p>JAVASCRIPT</p>
+          </div>
+          <div>
+            <img class="skillImage" src="./assets/CSS.png" alt="" />
+            <p>CSS</p>
+          </div>
+          <div>
+            <img class="skillImage" src="./assets/HTML.svg.png" alt="" />
+            <p>HTML</p>
+          </div>
+          <div>
+            <img class="skillImage" src="./assets//postgresql.svg" alt="" />
+            <p>POSTGRESQL</p>
+          </div>
+          <div>
+            <img class="skillImage" src="./assets//nodejs-logo.png" alt="" />
+            <p>NODE JS</p>
+          </div>
+          <div>
+            <img class="skillImage" src="./assets/React.svg.png" alt="" />
+            <p>REACT</p>
+          </div>
+          <div>
+            <img class="skillImage" src="./assets/redux.png" alt="" />
+            <p>REDUX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="triangleTop projectBefore"></div>
+    <div class="Projects">
+      <div class="projectHeader">
+        <h1>Projects</h1>
+        <div class="hr"></div>
+      </div>
+      <div class="projectContainer">
+        <div class="panels">
+          <div class="panel panel1">
+            <div class="panelShadow">
+              <h1>Login/Auth Screen</h1>
+              <p>
+                User authentication using bcrypt to hash and salt passwords.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel2">
+            <div class="panelShadow">
+              <h1>Campaign Screen</h1>
+              <p>
+                Allows users to select on of the campaigns with which they are
+                associated as a player or dungeon-master as well as join
+                campaigns or create new ones the UI changes to accomodate mobile
+                users.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel3">
+            <div class="panelShadow">
+              <h1>Campaign Settings</h1>
+              <p>
+                This screen is conditionaly rendered, for the dungeon-master it
+                allows him to adjust the settings of the campaign such as level
+                limits as well as controling which users have access to the
+                campaign as players for the players it allows them to leave the
+                campaign.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel4">
+            <div class="panelShadow">
+              <h1>Player Stat Cards</h1>
+              <p>
+                This Screen shows us the cards for characters associated with
+                the user and the campaign & create or import new ones. If you
+                are the dm it shows all the characters associated with the
+                campaign.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel5">
+            <div class="panelShadow">
+              <h1>Character Sheet</h1>
+              <p>
+                This view shows the character sheet with all of the sections
+                collapsed this sheet allows the dungeon-master to edit all of
+                the minute details included in a character.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel6">
+            <div class="panelShadow">
+              <h1>Character Sheet (Open)</h1>
+              <p>
+                This shows one of the sections open. These sections contain all
+                of data necissary to play the game.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="projectData">
+          <h1>
+            <a href="https://dnd1e.com" alt="Live Site Link"
+              >Dungeon Masters Aid</a
+            >
+          </h1>
+          <div class="hr"></div>
+          <p>CSS | HTML | REACT | NODE | POSTGRESQL</p>
+          <ul>
+            <li>Personally developed website.</li>
+            <li>
+              Full CRUD web application that allows users to create and
+              administer data for characters from Advanced Dungeons & Dragons.
+            </li>
+            <li>
+              React front-end determines character creation and editing options
+              based on the games rules.
+            </li>
+            <li>
+              SQL database with all of the data needed for character generation.
+            </li>
+            <li>
+              <a href="https://github.com/paytonalexanderwhipple/dms_aid"
+                >Github Repo:
+                https://github.com/paytonalexanderwhipple/dms_aid</a
+              >
+            </li>
+            <li><a href="https://dnd1e.com">Live Site Link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="projectContainer">
+        <div class="projectData">
+          <h1>
+            <a class="stackoverflow" href="#" alt="Live Site Link">
+              <img
+                class="stackLogo"
+                src="http://lh3.googleusercontent.com/6AMietCWSXysmPDEiIEzXoJP2HzXYNbDHx83l42JqnX350YlyBGmwk7ithVCTIM2fbM=w300"
+                alt="stackoverflow Logo"
+              />
+              not
+              <span class="bold">stack</span>
+              overflow</a
+            >
+          </h1>
+          <div class="hr"></div>
+          <p>CSS | HTML | REACT | NODE | POSTGRESQL</p>
+          <ul>
+            <li>Developed as a group with Mccoy Nelson and Ryan Huchison.</li>
+            <li>
+              A web app with a FULL CRUD rest api to create, edit, upvote,
+              answer questions and more functionality from the well known
+              website stackoverflow.
+            </li>
+            <li>
+              The React frontend allows users to interact with all of the data
+              displayed by the site.
+            </li>
+            <li>
+              A Postgresql database allows for persistent data and Auth0
+              authentication allows users to sign in with facebook or google
+              accounts.
+            </li>
+            <li>
+              <a href="https://github.com/devmtngrouprpn/notStackOverflow"
+                >Github Repo:
+                https://github.com/devmtngrouprpn/notStackOverflow</a
+              >
+            </li>
+            <li><a href="#">Live Site Link</a></li>
+          </ul>
+        </div>
+        <div class="panels">
+          <div class="panel panel7">
+            <div class="panelShadow">
+              <h1>Auth0 Login Screen</h1>
+              <p>
+                User authentication using bcrypt to hash and salt passwords.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel8">
+            <div class="panelShadow">
+              <h1>Home</h1>
+              <p>
+                Allows users to select on of the campaigns with which they are
+                associated as a player or dungeon-master as well as join
+                campaigns or create new ones the UI changes to accomodate mobile
+                users.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel9">
+            <div class="panelShadow">
+              <h1>Tags</h1>
+              <p>
+                This screen is conditionaly rendered, for the dungeon-master it
+                allows him to adjust the settings of the campaign such as level
+                limits as well as controling which users have access to the
+                campaign as players for the players it allows them to leave the
+                campaign.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel10">
+            <div class="panelShadow">
+              <h1>Users</h1>
+              <p>
+                This Screen shows us the cards for characters associated with
+                the user and the campaign & create or import new ones. If you
+                are the dm it shows all the characters associated with the
+                campaign.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel11">
+            <div class="panelShadow">
+              <h1>Question</h1>
+              <p>
+                This view shows the character sheet with all of the sections
+                collapsed this sheet allows the dungeon-master to edit all of
+                the minute details included in a character.
+              </p>
+            </div>
+          </div>
+          <div class="panel panel12">
+            <div class="panelShadow">
+              <h1>User</h1>
+              <p>
+                This shows one of the sections open. These sections contain all
+                of data necissary to play the game.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="triangleBottom projectAfter"></div>
+    <div class="Contact">
+      <div class="shadow">
+        <div class="contact">
+          <div><img src="assets/mail.png" alt="its an envelope" /></div>
+          <a href="mailto:web-dev@paytonwhipple.com"
+            >web-dev@paytonwhipple.com</a
+          >
+        </div>
+        <div class="contact">
+          <div><img src="assets/linkedin.svg" alt="its Linkedin" /></div>
+          <a href="https://www.linkedin.com/in/payton-whipple/"
+            >https://www.linkedin.com/in/payton-whipple/</a
+          >
+        </div>
+        <div class="contact">
+          <div><img src="assets/github.svg" alt="github" /></div>
+          <a href="https://github.com/paytonalexanderwhipple"
+            >https://github.com/paytonalexanderwhipple</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
+    :root {
+      --color1: #202f66;
+      --color1-1: #3049a1;
+      --color2: #033860;
+      --color3: #087ca7;
+      --color3-3: #448faa;
+      --color3-4: #0b95c7;
+      --color4: #004385;
+      --color4-4: #0256aa;
+      --color5: #05b2dc;
+    }
+
+    html {
+      color: #ccc;
+      background-color: var(--color4);
+      font-family: "Open Sans Condensed", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* General Stuff */
+    .bold {
+      font-weight: bold;
+      margin: 0px -5px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .hr {
+      width: 40vw;
+      border: 0.5px #999 solid;
+      margin: 5px 0 10px 0;
+    }
+
+    a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #eee;
+    }
+
+    .shadow {
+      background: rgba(0, 0, 0, 0.26);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    /* General Stuff */
+
+    /* Triangle Stuff */
+    .triangleTop {
+      margin-top: -80px;
+      background: transparent;
+      border-style: solid;
+      border-width: 0 0 75px 100vw;
+    }
+
+    .triangleBottom {
+      background: transparent;
+      border-style: solid;
+      border-width: 75px 0 0 100vw;
+    }
+
+    /* Triangle Stuff */
+
+    /* Landing */
+    .Landing {
+      background-image: url("./assets/background3.jpg");
+      position: relative;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: none;
+      background-position: center;
+      height: 100vh;
+      width: 100vw;
+      z-index: -2;
+    }
+
+    .Landing > .shadow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .landingHeader {
+      margin-bottom: 5px;
+      font-size: 45px;
+      letter-spacing: 3px;
+      font-weight: normal;
+      color: #eee;
+    }
+
+    .landingText {
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: #ddd;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #primaryLinkCircle {
+      background: #777;
+      color: #ccc;
+      font-family: "Open sans";
+      height: 55px;
+      width: 55px;
+      border-radius: 75px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 55px;
+      margin-bottom: 15px;
+      z-index: 3;
+      opacity: 0.75;
+      border: none;
+      transition: all 0.65s;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    #primaryLinkCircle:hover {
+      background: #888;
+      color: #eee;
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    #primaryLinkCircle:focus {
+      outline: none;
+      background: #999;
+      color: #fff;
+    }
+
+    #link1 {
+      position: relative;
+      bottom: 65px;
+    }
+
+    #link2 {
+      position: relative;
+      bottom: 100px;
+    }
+
+    #link3 {
+      position: relative;
+      bottom: 150px;
+    }
+
+    #link4 {
+      position: relative;
+      bottom: 200px;
+    }
+
+    #link5 {
+      position: relative;
+      bottom: 250px;
+    }
+
+    .linkCircle {
+      visibility: hidden;
+      opacity: 0.75;
+      color: #ddd;
+      font-family: "Open Sans Condensed";
+      margin-bottom: 10px;
+      height: 40px;
+      width: 40px;
+      border-radius: 50px;
+      background: #999;
+      text-align: center;
+      line-height: 40px;
+      z-index: 2;
+      border: none;
+      transition: all 0.65s;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .linkCircle:hover {
+      background: #aaa;
+      color: #eee;
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    .linkCircle:focus {
+      background: #bbb;
+      color: #fff;
+      outline: none;
+      opacity: 1;
+    }
+
+    /* Landing */
+
+    /* About */
+    .About {
+      border-top: 5px solid var(--color1);
+      height: 50vh;
+      width: 100vw;
+      background: var(--color1);
+      padding: 0 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .aboutBefore {
+      margin-top: -80px;
+      border-color: transparent transparent var(--color1) transparent;
+    }
+
+    .aboutAfter {
+      border-color: var(--color1) transparent transparent transparent;
+    }
+
+    .aboutContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .About h1 {
+      align-self: flex-start;
+    }
+
+    .aboutText {
+      width: 40vw;
+      line-height: 22px;
+    }
+
+    .faceShot {
+      height: 250px;
+      min-height: 250px;
+      width: 250px;
+      min-width: 250px;
+      border-radius: 250px;
+      margin-left: 100px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .aboutHr {
+      border-color: var(--color1-1);
+    }
+
+    /* About */
+
+    /* Skills */
+    .Skills {
+      height: 65vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Skills h1 {
+      align-self: flex-start;
+      margin-bottom: 5px;
+    }
+
+    .outerSkillsContainer > div {
+      width: 50vw;
+    }
+
+    .outerSkillsContainer {
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+    }
+
+    .skillsContainer {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 50vw;
+      justify-content: center;
+    }
+
+    .skillsContainer > div {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px;
+    }
+
+    #jsSkill {
+      margin-right: -5px;
+    }
+
+    .Skills img {
+      height: 50px;
+      min-width: 50px;
+    }
+
+    .skillHr {
+      border-color: var(--color4-4);
+    }
+
+    /* Skills */
+
+    /* Projects */
+    .Projects {
+      border: 5px solid var(--color3);
+      background: var(--color3);
+      height: auto;
+      padding-bottom: 50px;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .Projects > .projectHeader > h1 {
+      align-self: flex-start;
+      margin-bottom: 5px;
+    }
+
+    .Projects > .projectHeader > .hr {
+      width: 50vw;
+      border-color: var(--color3-3);
+    }
+
+    .projectBefore {
+      border-color: transparent transparent var(--color3) transparent;
+    }
+
+    .projectAfter {
+      border-color: var(--color3) transparent transparent transparent;
+      position: relative;
+      z-index: 1;
+    }
+
+    .projectContainer {
+      display: flex;
+      margin-top: 25px;
+      justify-content: space-between;
+    }
+
+    .stackLogo {
+      transform: scaleX(-1) rotate(126deg);
+      height: 25px;
+      width: 25px;
+    }
+
+    .stackoverflow {
+      font-weight: 100;
+    }
+
+    .projectData > div {
+      width: 25vw;
+      border-color: var(--color3-3);
+    }
+
+    .projectData > ul {
+      width: 200px;
+      list-style-type: circle;
+      margin-left: 25px;
+    }
+
+    .projectData li {
+      margin: 5px;
+    }
+
+    .projectData {
+      margin: 0 25px;
+    }
+
+    .panels {
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      width: 55vw;
+      transition: all 0.65s;
+    }
+
+    .panels > .panel > *:first-child {
+      top: 3px;
+    }
+
+    .panel {
+      position: relative;
+      flex: 1;
+      background-color: var(--color3-4);
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0px 0px 15px #0256aa inset;
+      color: #666;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: flex 0.8s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+      overflow: hidden;
+      margin: 5px 0;
+    }
+
+    .panelShadow {
+      background: rgba(8, 57, 124, 0.5);
+      width: 100%;
+      height: 100%;
+      transition: all 0.65s;
+    }
+
+    .panel:hover {
+      cursor: pointer;
+    }
+
+    .panel.open {
+      flex: 9;
+      background-size: contain;
+      background-repeat: no-repeat;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.16);
+    }
+
+    .panel > .panelShadow > *:first-child {
+      position: absolute;
+      padding: 3px;
+      top: 4px;
+      width: 100%;
+      transition: top 0.8s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        opacity 0.8s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.65s,
+        color 0.65s;
+    }
+
+    .panel:hover > .panelShadow > *:first-child {
+      background: rgba(0, 0, 0, 0.7);
+      color: #eee;
+    }
+
+    .panel.open > .panelShadow > *:first-child {
+      opacity: 0;
+      top: 0;
+    }
+
+    .panel > .panelShadow > *:last-child {
+      transition: all 0.65s, opacity 1s cubic-bezier(0.49, -0.08, 0.17, 1);
+      position: absolute;
+      bottom: 0;
+      opacity: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .panel.open > .panelShadow > *:last-child {
+      opacity: 1;
+      bottom: 10px;
+      padding: 5px 20px;
+    }
+
+    .panel > .panelShadow > h1 {
+      background: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color: #ccc;
+      font-family: "Open Sans Condensed";
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    .panel > .panelShadow > p {
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.65);
+      color: #ccc;
+    }
+
+    .panel1 {
+      background-image: url("./assets/screenshotLogin.png");
+    }
+
+    .panel2 {
+      background-image: url("./assets/screenshotCampaign.png");
+    }
+
+    .panel3 {
+      background-image: url("./assets/screenshotSettings.png");
+    }
+
+    .panel4 {
+      background-image: url("./assets/screenshotCards.png");
+    }
+
+    .panel5 {
+      background-image: url("./assets/screenshotSheet1.png");
+    }
+
+    .panel6 {
+      background-image: url("./assets/screenshotSheet2.png");
+    }
+
+    /* Projects */
+
+    /* Contact */
+    .Contact {
+      background-image: url("./assets/background3.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: none;
+      background-position: center;
+      height: 35vh;
+      width: 100vw;
+      margin-top: -75px;
+      position: relative;
+      z-index: 0;
+    }
+
+    .Contact > .shadow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact {
+      margin: 15px;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact > div {
+      max-height: 33px;
+      width: 33px;
+      margin-right: 5px;
+      border: rgba(256, 256, 256, 0.5) solid 2px;
+      padding: 15px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact > div > img {
+      max-height: 20px;
+      width: 20px;
+    }
+
+    /* Contact */
+  </style>
+
+  <script>
+    let menuButton = document.querySelector("#primaryLinkCircle"),
+      catagoryLinks = document.querySelectorAll(".linkCircle");
+
+    function toggleMenu() {
+      if (!menuButton.dataset.toggled) {
+        menuButton.dataset.toggled = "true";
+        catagoryLinks.forEach(link => {
+          link.style.visibility = "initial";
+          link.style.bottom = "0px";
+        });
+      } else {
+        menuButton.dataset.toggled = "";
+        catagoryLinks.forEach((link, i) => {
+          link.style.visibility = "hidden";
+          switch (i) {
+            case 0:
+              link.style.bottom = "65px";
+              break;
+            case 1:
+              link.style.bottom = "100px";
+              break;
+            case 2:
+              link.style.bottom = "150px";
+              break;
+            case 3:
+              link.style.bottom = "200px";
+              break;
+            case 4:
+              link.style.bottom = "250px";
+          }
+        });
+      }
+    }
+
+    function linkClick() {
+      window.scrollTo(
+        0,
+        +this.dataset.yCord + (window.screen.height > 1000 ? 500 : 0)
+      );
+    }
+
+    menuButton.addEventListener("click", toggleMenu);
+
+    catagoryLinks.forEach(link => link.addEventListener("click", linkClick));
+
+    // Acordian Photos
+
+    let panels = document.querySelectorAll(".panel");
+    let panelBoxs = document.querySelectorAll(".panels");
+    let panelShadows = document.querySelectorAll(".panelShadow");
+
+    function toggleOpen() {
+      if (this.classList.contains("open")) {
+        return;
+      } else {
+        let shadow = this.querySelector(".panelShadow");
+        setTimeout(() => {
+          this.classList.add("open");
+        }, 0);
+        setTimeout(() => {
+          shadow.style.background = "rgba(8, 57, 124, 0)";
+        }, 650);
+      }
+    }
+
+    function toggleAll() {
+      panels.forEach(panel => {
+        panel.classList.remove("open");
+      });
+      panelShadows.forEach(shadow => {
+        shadow.style.background = "rgba(8, 57, 124, .5)";
+      });
+    }
+
+    panels.forEach(panel => panel.addEventListener("click", toggleOpen));
+
+    panelBoxs.forEach(panelBox => {
+      panelBox.addEventListener("click", toggleAll);
+    });
+  </script>
+</html>
