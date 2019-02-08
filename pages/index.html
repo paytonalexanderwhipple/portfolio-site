@@ -13,11 +13,11 @@
   <body>
     <nav>
       <button id="primaryLinkCircle" data-toggled="">Menu</button>
-      <button class="linkCircle" id="link1" data-y-cord="0">Landing</button>
-      <button class="linkCircle" id="link2" data-y-cord="500">About</button>
-      <button class="linkCircle" id="link3" data-y-cord="1000">Skills</button>
-      <button class="linkCircle" id="link4" data-y-cord="1400">Projects</button>
-      <button class="linkCircle" id="link5" data-y-cord="5400">Contact</button>
+      <button class="linkCircle" id="link1">Landing</button>
+      <button class="linkCircle" id="link2">About</button>
+      <button class="linkCircle" id="link3">Skills</button>
+      <button class="linkCircle" id="link4">Projects</button>
+      <button class="linkCircle" id="link5">Contact</button>
     </nav>
     <div class="Landing">
       <div class="shadow">
@@ -32,13 +32,11 @@
         <h1 class="aboutHeader">About Me</h1>
         <div class="hr aboutHr"></div>
         <p class="aboutText">
-          Integer tincidunt pharetra diam, congue placerat ex euismod eget.
-          Integer ornare, purus non bibendum eleifend, diam sapien elementum
-          felis, quis tempus est nulla sit amet dui. Duis at egestas turpis.
-          Curabitur lacinia libero pulvinar congue bibendum. Praesent ornare
-          accumsan malesuada. Praesent tristique leo lobortis maximus dignissim.
-          Nunc sodales convallis tortor ut porta. Class aptent taciti sociosqu
-          ad litora torquent per conubia nostra, per inceptos himenaeos.
+          Born and raised in Provo, Utah. I've recently returned from Peru after
+          serving two years as a missionary for The Church of Jesus Christ of
+          Latter Day Saints And I am Looking forward to entering the Web
+          Development industry. I love logic and problem solving and I love to
+          code. Couldn’t be more exited for a long career in Web Development.
         </p>
       </div>
       <img class="faceShot" src="./assets/head-shot.JPG" alt="My face" />
@@ -579,6 +577,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
 
     .Skills h1 {
@@ -591,6 +590,8 @@
     }
 
     .outerSkillsContainer {
+      position: relative;
+      bottom: 7.5vh;
       display: flex;
       flex-direction: column;
       width: 50vw;
@@ -899,10 +900,8 @@
     }
 
     function linkClick() {
-      window.scrollTo(
-        0,
-        +this.dataset.yCord + (window.screen.height > 1000 ? 500 : 0)
-      );
+      const item = document.querySelector(`.${this.textContent}`);
+      item.scrollIntoView();
     }
 
     menuButton.addEventListener("click", toggleMenu);
